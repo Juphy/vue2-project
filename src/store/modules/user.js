@@ -19,6 +19,7 @@ const actions = {
     login({ commit }, userInfo){
         const { username } = userInfo
         return new Promise((resolve, reject) => {
+            // 此处调用登录接口
             setTimeout(() => {
                 if(username === 'admin' || username === 'Juphy'){
                     // 保存状态
@@ -36,7 +37,7 @@ const actions = {
     getInfo({ commit, state }){
         return new Promise((resolve) => {
             setTimeout(() => {
-                const roles = state.token === 'admin'?['admin']:['editor']
+                const roles = state.token === 'admin'?['admin']:['jerry']
                 commit('SET_ROLES', roles)
                 resolve({roles})
             }, 1000)

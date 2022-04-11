@@ -29,7 +29,9 @@ router.beforeEach(async (to, from, next) => {
                     const accessRoutes = await store.dispatch('permission/generateRoutes', roles)
 
                     // 添加这些路由至路由器
-                    router.addRoutes(accessRoutes)
+                    accessRoutes.forEach(route => {
+                        router.addRoute(route)
+                    })
 
                     // 继续路由切换,确保addRoutes完成
                     next({ ...to, replace: true })

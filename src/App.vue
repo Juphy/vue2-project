@@ -14,6 +14,7 @@ export default {};
 
 <style lang="scss">
 #app {
+  height: 1000px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

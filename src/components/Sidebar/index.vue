@@ -39,8 +39,8 @@ export default {
     variables() {
       return {
         menuText: "#bfcbd9",
-        menuActiveText: "#409EFF",
-        menuBg: "#304156",
+        menuActiveText: "#ffffff",
+        menuBg: "#001529",
       };
     },
   },

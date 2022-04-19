@@ -14,7 +14,8 @@ const directives = {
     emoji,
     lazyload,
     draggable,
-    watermarker
+    watermarker,
+    permission
 }
 
 export default{

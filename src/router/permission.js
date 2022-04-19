@@ -1,3 +1,4 @@
+// 全局守卫
 import router from './index'
 import store from '@/store/index'
 

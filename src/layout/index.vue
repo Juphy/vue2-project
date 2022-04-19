@@ -4,6 +4,7 @@
       <el-aside width="220px" class="main-aside">
         <el-header class="heads" height="50px">
           <img src="@/assets/logo.png" alt="logo" />
+          <span>Vue.js</span>
         </el-header>
         <sidebar class="sidebar-container"></sidebar>
       </el-aside>
@@ -56,12 +57,21 @@ export default {
   display: flex;
   flex-direction: column;
   .heads {
-    /* background: #fff; */
+    background: #fff;
     text-align: center;
     border: none;
     border: 5px solid #dcdfe6;
     img {
       height: 100%;
+    }
+    span {
+      display: inline-block;
+      font-size: 1.5em;
+      line-height: 40px;
+      color: #273849;
+      font-family: "Dosis", "Source Sans Pro", "Helvetica Neue", Arial,
+        sans-serif;
+      font-weight: 500;
     }
   }
 }
